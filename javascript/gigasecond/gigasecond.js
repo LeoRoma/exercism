@@ -4,9 +4,9 @@
 //
 
 export const gigasecond = (gs) => {
-  let dateInSeconds = gs.getTime() / 1000;
-  let addGigaSeconds = dateInSeconds += (10 ** 9);
-  let newDate = new Date(dateInSeconds * 1000);
+  const gigaseconds = 10 ** 9;
+  var dateInSeconds = gs.getMilliseconds();
+  var newDate = new Date(dateInSeconds += gigaseconds);
   return newDate;
 };
 
